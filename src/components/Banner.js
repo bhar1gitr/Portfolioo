@@ -48,30 +48,31 @@ export const Banner = () => {
   }
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Bharat`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+ <section className="banner" id="home">
+  <Container>
+    <Row className="aligh-items-center">
+      <Col xs={12} md={6} xl={7}>
+        <TrackVisibility>
+          {({ isVisible }) =>
+          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+            <span className="tagline">Welcome to my Portfolio</span>
+            <h1>{`Hi! I'm Bharat Sharma`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "UI Library Creator", "Tech Enthusiast" ]'><span className="wrap">{text}</span></span></h1>
+              <p>I am a passionate developer with expertise in web development, UI design, and creating interactive components. I also specialize in creating custom UI libraries and exploring innovative ideas in technology and visualization. Let’s build something amazing together!</p>
+              <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+          </div>}
+        </TrackVisibility>
+      </Col>
+      <Col xs={12} md={6} xl={5}>
+        <TrackVisibility>
+          {({ isVisible }) =>
+            <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+              <img src={headerImg} alt="Header Image"/>
+            </div>}
+        </TrackVisibility>
+      </Col>
+    </Row>
+  </Container>
+</section>
+
   )
 }
